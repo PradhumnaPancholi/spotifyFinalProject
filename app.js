@@ -1,6 +1,6 @@
-var script = angular.module('spotifyPlaylist', ['ngRoute']);
+var app = angular.module('spotifyPlaylist', ['ngRoute']);
 
-script.config(function($routeProvider, $locationProvider){
+app.config(function($routeProvider, $locationProvider){
 	$routeProvider
 	.when('/', {
 		templateUrl: 'homeView.html',
