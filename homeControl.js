@@ -28,6 +28,8 @@ app.controller('homeControl', function($scope, $timeout, $location, spotifyFacto
 
     var query = search.substring(0, search.length - 1);
     console.log(query);
+
+    $location.path('/playlist');
   }
 
 //   spotifyFactory.getTracks(query).then(function(data){
