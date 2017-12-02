@@ -25,6 +25,9 @@ app.controller('homeControl', function($scope, $timeout, $location, spotifyFacto
         console.log(search);
       };
     });
+
+    var query = search.substring(0, search.length - 1);
+    console.log(query);
   }
 
 //   spotifyFactory.getTracks(query).then(function(data){
