@@ -5,7 +5,7 @@ app.controller('playlistControl', function($scope, $rootScope, $http, $sce, spot
     $rootScope.mainBackgroundImage = data.data.hits[0].webformatURL;
     $scope.playlist = spotifyFactory.savedTracks;
     $scope.playlist.forEach (function (song){
-      song.src=$sce.trustAsResourceUrl(`https://play.spotify.com/embed?uri=${song.uri}`); 
+      song.src=$sce.trustAsResourceUrl(`https://embed.spotify.com/?uri=${song.uri}`); 
       //making a new property on every object called SRC, we will reference this src object 
     
     });
