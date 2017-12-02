@@ -8,7 +8,7 @@ app.config(function($routeProvider, $locationProvider){
 	})
 	.when('/playlist', {
 		templateUrl: 'playlistView.html',
-		controller: 'imageCtrl'
+		controller: 'playlistControl'
 	})
 	.otherwise ({
 		templateUrl: 'errorview.html'
