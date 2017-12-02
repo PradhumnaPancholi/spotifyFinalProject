@@ -2,17 +2,17 @@ var app = angular.module('spotifyPlaylist');
 app.factory('spotifyFactory', function ($http) {
   var authToken;
   var retry = 1;
-
+// var authToken creates empty authToken variable. 
   return {
     getTracks
   };
-
+//returning our function get tracks
   function getTracks (query) {
     return authorize().then(function(token){
       return trackRequest(token, query)
     });
   }
-
+//our function getTracks takes query (user input) as a parameter (placeholder). it returns our authorize function 
 
   function authorize () {
     if(authToken) {
