@@ -166,7 +166,10 @@ color: gray;
     height: auto;
     width: auto;
 }
-
+#rickrolled {
+    width: 100%    !important;
+    height: auto   !important;
+}
 /* 
 .player {
     position: relative;

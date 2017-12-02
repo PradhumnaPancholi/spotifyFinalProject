@@ -5,5 +5,4 @@ app.controller('imageCtrl', function($scope, $http){
     $scope.post = data.data.hits[0];
     console.log($scope.posts);
   });
-
 });

@@ -11,7 +11,7 @@ app.config(function($routeProvider, $locationProvider){
 		controller: 'imageController'
 	})
 	.otherwise ({
-		template: '<h1>HTTP ERROR 404</h1><h3>Oops, it looks like this page does not exist.</h3>'
+		templateUrl: 'errorview.html'
 	})
 	$locationProvider.hashPrefix('');
 });

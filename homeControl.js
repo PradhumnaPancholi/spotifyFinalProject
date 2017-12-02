@@ -1,6 +1,3 @@
-
-
-
 var app =angular.module('spotifyPlaylist');
 app.controller('homeControl', function($scope, $timeout, $location, spotifyFactory){
   
