@@ -7,7 +7,7 @@ app.controller('playlistControl', function($scope, $rootScope, $http, $sce, spot
     $scope.playlist.forEach (function (song){
       song.src=$sce.trustAsResourceUrl(`https://embed.spotify.com/?uri=${song.uri}`); 
       //making a new property on every object called SRC, we will reference this src object 
-    
+     
     });
   });
 });
