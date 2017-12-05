@@ -1,12 +1,16 @@
 body {
     font-family: arial;
-    background-color: rgb(172, 172, 172);   
-    background-image: url('https://static1.squarespace.com/static/55d62be6e4b0be109fdab4b5/55d74672e4b06c5ffbc15cc4/55d746aae4b0c9560c4bd747/1440171692692/_T0U0829_20m_RGB.jpg?format=2500w');
-    /* background-image: url('http://s3.amazonaws.com/taggist/posts/photos/original/137-tumblr_m9ubagH3wO1qzyjdbo1_1280.jpeg?1347158661'); */
-    /* background-image: url("https://i.pinimg.com/originals/bf/93/25/bf9325c2a8910ba4d79a9aa80299cc0d.jpg"); */
+    background-color: rgb(230, 230, 230);   
     background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 
+.logo{
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    width: 65px;
+}
 a {
     text-decoration: none;
     list-style-type: none;
@@ -20,6 +24,14 @@ a:hover {
     color: rgb(126, 252, 141);
 }
 
+#spotify-header {
+    position: fixed;
+    border: solid red 10px;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(172, 0, 0);
+}
 /* .navigation1 {
     padding-top: -15px;
     display: flex;
@@ -31,7 +43,6 @@ nav {
     display: flex;
     float: left;
     background-color: #000000;
-    width: auto;
     font-size:13px;
     border-radius: 3px;
     margin-top: -25px;
@@ -51,6 +62,7 @@ nav:hover {
     margin-bottom: 5px;
     color: #1DB954;
     font-family: 'Roboto Slab', serif;
+    /* text-shadow: 2px 2px 5px #ffffff; */
 }
 
 .spotify-type2 {
@@ -75,6 +87,7 @@ h3 {
     font-family: 'Roboto Slab', serif;
 }
 
+
 /* h3::first-letter {
     font-size: 30px;
     margin-bottom: 5px;
@@ -82,11 +95,6 @@ h3 {
     font-family: 'Roboto Slab', serif;
 } */
 
-
-/* .home-image {
-    background-image: url("https://i.pinimg.com/originals/bf/93/25/bf9325c2a8910ba4d79a9aa80299cc0d.jpg");
-    background-size: cover;
-} */
 
 .playlistImage{
     background-size: cover;
@@ -122,7 +130,7 @@ color: gray;
     display: flex;
     position: absolute;
     height: 365px;
-    width: 500px;
+    width: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -152,7 +160,6 @@ color: gray;
     flex-direction: column;
     position: absolute;
     align-items: center;
-    justify-content: space-around;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -166,10 +173,52 @@ color: gray;
     height: auto;
     width: auto;
 }
-#rickrolled {
-    width: 100%    !important;
-    height: auto   !important;
+
+#rickrolled-type {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: arial;
+    font-size: 15px;
+    color: rgb(157, 157, 157);
 }
+
+#rickrolled {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid #1DB954;
+    opacity: 0.9;
+    padding-top: 20px;
+    padding: 0px;
+    transform: translate(-50%, -50%);
+    height: 365px;
+    width: 400px;
+}
+
+.rick-image {
+    background-size: cover;
+}
+//ASK IVAN about $rootScope for the rick astley PHOTO
+
+
+
+/* //still need code for mobile to white background// */
+
+/* @media (min-device-width: 400px) {
+    body { 
+        background-image: null;
+        background-color: white;
+    } */
+
+
 /* 
 .player {
     position: relative;

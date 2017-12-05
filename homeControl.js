@@ -24,7 +24,7 @@ app.controller('homeControl', function($scope, $rootScope, $location, spotifyFac
     //     console.log(search);
     //   };
     // });
- 
+    spotifyFactory.location = $scope.input2;
     var query = `track:${$scope.input1}+OR+track:${$scope.input2}`
     console.log(query);
     spotifyFactory.getTracks(query).then(function(data){
