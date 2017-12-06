@@ -11,7 +11,8 @@ app.config(function($routeProvider, $locationProvider){
 		controller: 'playlistControl'
 	})
 	.otherwise ({
-		templateUrl: 'errorview.html'
+		templateUrl: 'errorview.html',
+		controller: 'errorControl'
 	})
 	$locationProvider.hashPrefix('');
 });
