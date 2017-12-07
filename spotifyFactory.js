@@ -42,7 +42,7 @@ app.factory('spotifyFactory', function ($http) {
     // if (savedTracks.length) {
     //   return Promise.resolve(savedTracks);
     // }
-    var url=`https://api.spotify.com/v1/search?q=${query}&type=track&limit=5`
+    var url=`https://api.spotify.com/v1/search?q=${query}&type=track&limit=50`
     var headers = {
       Authorization: `Bearer ${token}`
       //our function takes token & query as paramaters, then we move onto our next function (provided the authorization code is accepted)
@@ -52,6 +52,7 @@ app.factory('spotifyFactory', function ($http) {
     return $http.get(url, {headers}).then(function(response) {
       // savedTracks= response.data;
       return response.data;
+      console.log(response.data);
     }).catch (function (err) {
       if (err.status === 401 && retry < 2) {
         retry++
