@@ -144,12 +144,14 @@ color: gray;
 }
 
 .button-black{
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     border-color: rgb(52, 50, 50);
     display: flex;
     justify-content: center;
     color: white;
-    background-color: black;
+    background-color: #1DB954;
+    border-radius: 30px;
     padding: 13px;
     width: 250px;
     margin: 25px;
