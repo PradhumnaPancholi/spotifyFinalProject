@@ -1,9 +1,13 @@
 var app =angular.module('spotifyPlaylist');
 
-var items = ['food', 'color', 'number', 'city'];
+var items = ['Favorite sport?', 'Gin or Juice?', 'Tea or coffee?','Where were you born?','One thing to eat for the rest of your life?',
+'What color are your kicks?','What’s the color of your locks??','What is your favorite season?','What’s in your pocket?','Dog, cat, fish, bird?',
+'Howdya like your steak done?','Biggie or Tupac?','Knicks or Bulls?','Relationship status?','If animals could talk, which would be the rudest?',
+'What color is that dress??','What color was your first car?','What’s your favorite time of day?','Morning or night person?','What’s your dream destination?',
+'What city do you love?','What city do you loathe?','The last you’ll ever say?','Favorite swear word…','Favorite instrument?','David or Goliath?','Kim, Caitlyn or Kayne?'];
 
 
-app.controller('homeControl', function($scope, $rootScope, $location, spotifyFactory){
+app.controller('homeControl', function($scope, $rootScope, $location, $timeout, spotifyFactory){
   $rootScope.mainBackgroundImage = 'https://static1.squarespace.com/static/55d62be6e4b0be109fdab4b5/55d74672e4b06c5ffbc15cc4/55d746aae4b0c9560c4bd747/1440171692692/_T0U0829_20m_RGB.jpg?format=2500w';
   spotifyFactory.savedTracks= null
   $scope.placeholder = items[Math.floor(Math.random()*items.length)];
@@ -39,7 +43,7 @@ app.controller('homeControl', function($scope, $rootScope, $location, spotifyFac
     spotifyFactory.getTracks(query).then(function(data){
       console.log(data.tracks);
       spotifyFactory.savedTracks= data.tracks.items;
-      $location.path('/playlist');
+      $timeout($location.path('/playlist'));
     });
   }
 
