@@ -160,6 +160,21 @@ color: gray;
     margin: 20px;
     margin-bottom: auto;
 }
+.button-black2{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-color: rgb(52, 50, 50);
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1DB954;
+    border-radius: 30px;
+    line-height: .1;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    margin-bottom: auto;
+}
 
 
 .player {
@@ -182,6 +197,18 @@ color: gray;
     width: auto;
     max-height:500px;
     overflow: scroll;
+}
+.playlistButtons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    padding-top: 20px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
 }
 
 #rickrolled-type {
@@ -212,6 +239,7 @@ color: gray;
     height: 365px;
     width: 400px;
 }
+
 
 .rick-image {
     background-size: cover;
