@@ -64,6 +64,23 @@ app.factory('spotifyFactory', function ($http) {
       }
     });
   };  
+
+//
+//   function createSpotifyPlaylist () {
+//     // function to get login 
+    
+//     var url = 'https://api.spotify.com/v1/users/blairsteen/playlists';
+//     var data = {
+//       name: query,
+//       description: 'playlist created by spotifind app'
+//     };
+//     var headers = {
+//       Authorization: `Bearer ${token}`,
+//       'Content-Type': 'application/json'
+//     }
+
+// }
+//
   function createSpotifyPlaylist (user_id) {
     var authToken;
     var retry = 1;
