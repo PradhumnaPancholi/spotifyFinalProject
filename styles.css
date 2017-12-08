@@ -161,6 +161,7 @@ color: gray;
     margin-bottom: auto;
 }
 
+
 .player {
     display: flex;
     flex-direction: column;
@@ -171,6 +172,7 @@ color: gray;
     margin-right: -50%;
     padding-top: 20px;
     padding: 30px;
+    padding-bottom: 70px;
     transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 10px;

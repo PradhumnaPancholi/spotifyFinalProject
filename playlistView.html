@@ -5,6 +5,8 @@
 </div> -->
 <div class="player">
 <span class="spotify-type3" >YOUR MIX AWAITS</span>
+
 <iframe ng-repeat = "song in playlist | limitTo: quantity" src="{{song.src}}" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+
 <button ng-click='nextButton()' class="button-black" >Load More Songs</button>
 </div>
