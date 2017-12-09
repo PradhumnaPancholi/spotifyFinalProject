@@ -8,7 +8,7 @@ var items = ['Favorite sport?', 'Gin or Juice?', 'Tea or coffee?','Where were yo
 
 
 app.controller('homeControl', function($scope, $rootScope, $location, $timeout, spotifyFactory){
-  $rootScope.mainBackgroundImage = 'https://static1.squarespace.com/static/55d62be6e4b0be109fdab4b5/55d74672e4b06c5ffbc15cc4/55d746aae4b0c9560c4bd747/1440171692692/_T0U0829_20m_RGB.jpg?format=2500w';
+  $rootScope.mainBackgroundImage = 'images/Nocito_Skrillex.jpg';
   spotifyFactory.savedTracks= null
   $scope.placeholder = items[Math.floor(Math.random()*items.length)];
   var placeholderList = items.filter(function(item){

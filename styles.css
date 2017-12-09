@@ -6,19 +6,19 @@ body {
 }
 
 .intro-title-header {
-    margin-top: 0;
+    margin-top: -5px;
 }
 
 .intro-title {
     color: #1DB954;
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .intro-titleWhite {
     color: rgb(249, 249, 249);
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .intro-para {
@@ -31,17 +31,20 @@ body {
 }
 
 .intro-box {
-    /* display: flex;
-    flex-direction: column; */
     position: absolute;
     width: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    opacity: 0.8;
+    opacity: 0;
     border-radius: 10px;
     border: 2px solid #1DB954;
+    transition: opacity 2s ease-in;
+}
+
+.intro-box.load {
+    opacity: 0.8;
 }
 
 .fynd-button {
@@ -76,7 +79,7 @@ a:hover {
     border-bottom: none;
     color: rgb(126, 252, 141);
 }
-
+/* 
 #spotify-header {
     position: fixed;
     border: solid red 10px;
@@ -84,7 +87,8 @@ a:hover {
     width: 100%;
     height: 40px;
     background-color: rgb(172, 0, 0);
-}
+} */
+
 /* .navigation1 {
     padding-top: -15px;
     display: flex;
@@ -93,7 +97,8 @@ a:hover {
    } */
 
 nav {
-    display: flex;
+
+    display: flex; 
     float: left;
     background-color: #000000;
     font-size:13px;
@@ -101,6 +106,11 @@ nav {
     margin-top: -25px;
     padding: 8px;
     margin-left: 10px;
+    opacity: 0;
+    transition: ease-in 2s;
+}
+nav.load {
+    opacity: 1;
 }
 
 nav:hover {
@@ -110,7 +120,7 @@ nav:hover {
 
 
 .spotify-type {
-    font-size: 30px;
+    font-size: 35px;
     padding-left: 10px;
     margin-bottom: 5px;
     color: #1DB954;
@@ -119,7 +129,7 @@ nav:hover {
 }
 
 .spotify-type2 {
-    font-size: 30px;
+    font-size: 35px;
     padding-left: 10px;
     margin-bottom: 5px;
     color: rgb(18, 18, 18);
@@ -130,7 +140,7 @@ nav:hover {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: -5px;
     color: #1DB954;
     font-family: 'Roboto Slab', serif;
@@ -140,14 +150,6 @@ h3 {
     font-size: 30px;
     font-family: 'Roboto Slab', serif;
 }
-
-
-/* h3::first-letter {
-    font-size: 30px;
-    margin-bottom: 5px;
-    color: rgb(7, 84, 25);
-    font-family: 'Roboto Slab', serif;
-} */
 
 
 .playlistImage{
@@ -223,7 +225,7 @@ color: gray;
     line-height: .1;
     padding: 20px;
     width: 250px;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: auto;
 }
 
@@ -235,10 +237,10 @@ color: gray;
     align-items: center;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
+    /* margin-right: -50%; */
     padding-top: 20px;
     padding: 30px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
     transform: translate(-50%, -50%);
     background-color: black;
     border-radius: 10px;
@@ -246,7 +248,7 @@ color: gray;
     opacity: 0.9;
     height: auto;
     width: auto;
-    max-height:500px;
+    max-height: 425px;
     overflow: scroll;
 }
 .playlistButtons {
@@ -256,9 +258,8 @@ color: gray;
     align-items: center;
     top: 100%;
     left: 50%;
-    margin-right: -50%;
-    padding-top: 20px;
-    padding: 30px;
+    margin-top: -100px;
+    margin-bottom:100px;
     transform: translate(-50%, -50%);
 }
 
@@ -295,34 +296,4 @@ color: gray;
 .rick-image {
     background-size: cover;
 }
-//ASK IVAN about $rootScope for the rick astley PHOTO
 
-
-
-/* //still need code for mobile to white background// */
-
-/* @media (min-device-width: 400px) {
-    body { 
-        background-image: null;
-        background-color: white;
-    } */
-
-
-/* 
-.player {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-}
-    .player iframe,
-    .player object,
-    .player embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 50%;
-    } */
