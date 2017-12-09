@@ -22,7 +22,7 @@ app.config(function($routeProvider, $locationProvider){
 });
 
 app.run(function($rootScope, $timeout){
-	$rootScope.mainBackgroundImage = 'https://static1.squarespace.com/static/55d62be6e4b0be109fdab4b5/55d74672e4b06c5ffbc15cc4/55d746aae4b0c9560c4bd747/1440171692692/_T0U0829_20m_RGB.jpg?format=2500w'
+	$rootScope.mainBackgroundImage = 'images/Nocito_Skrillex.jpg';
 	$rootScope.navClass = '';
 	$timeout(function(){
 		$rootScope.navClass = 'load';
