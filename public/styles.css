@@ -188,6 +188,7 @@ color: gray;
     position: absolute;
     height: 365px;
     width: 400px;
+    max-width: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -246,9 +247,10 @@ color: gray;
     border-radius: 10px;
     border: 2px solid #1DB954;
     opacity: 0.9;
-    height: auto;
+    height: 425px;
     width: auto;
-    max-height: 425px;
+    max-width: 95%;
+    max-height: 55%;
     overflow: scroll;
 }
 .playlistButtons {
