@@ -170,9 +170,10 @@ h3 {
 }
 
 .underline {
-    width: 100%;
+    width: 95%;
     font-size: 13px;
     padding: 10px;
+    margin-right: 40px;
     border: 0;
     outline: 0;
     background: transparent;
