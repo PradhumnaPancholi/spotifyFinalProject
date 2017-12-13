@@ -342,7 +342,7 @@ color: gray;
 }
 @media all and (max-width: 736px) {
     .gradient {
-        background: linear-gradient(to bottom, rgb(255, 255, 255) 50%,rgba(255,255,255,1.0) 100%); 
+        background: linear-gradient(to bottom, rgb(235, 235, 235) 50%,rgb(205, 205, 205) 100%); 
         position: fixed;
         top: 0px;
         left: 0px;
