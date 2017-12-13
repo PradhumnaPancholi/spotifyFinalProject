@@ -207,9 +207,10 @@ h3 {
 
 .underline {
     width: 95%;
-    font-size: 13px;
+    max-width: 92%;
+    font-size: 12px;
     padding: 10px;
-    margin-right: 40px;
+    /* margin-right: 20px; */
     border: 0;
     outline: 0;
     background: transparent;
@@ -226,6 +227,7 @@ color: gray;
     height: 365px;
     width: 400px;
     max-width: 95%;
+    max-height: 55%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -286,8 +288,8 @@ color: gray;
     opacity: 0.9;
     height: 425px;
     width: auto;
-    max-width: 95%;
-    max-height: 55%;
+    max-width: 78%;
+    max-height: 45%;
     overflow: scroll;
 }
 .playlistButtons {
