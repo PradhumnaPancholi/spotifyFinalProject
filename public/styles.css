@@ -286,12 +286,20 @@ color: gray;
     border-radius: 10px;
     border: 2px solid #1DB954;
     opacity: 0.9;
-    height: 425px;
+    height: 63%;
     width: auto;
-    max-width: 78%;
-    max-height: 45%;
+    max-width: 95%;
+    /* max-height: 45%; */
     overflow: scroll;
 }
+
+@media all and (max-width: 736px) {
+    .player {
+        max-height: 45%;
+        max-width: 78%;
+    }
+}
+
 .playlistButtons {
     display: flex;
     flex-direction: column;

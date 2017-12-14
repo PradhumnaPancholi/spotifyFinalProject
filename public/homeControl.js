@@ -2,9 +2,11 @@ var app =angular.module('spotifyPlaylist');
 
 var items = ['Favorite sport?', 'Gin or Juice?', 'Tea or coffee?','Where were you born?','One thing to eat for the rest of your life?',
 'What color are your kicks?','What’s the color of your locks??','What is your favorite season?','What’s in your pocket?','Dog, cat, fish, bird?',
-'Howdya like your steak done?','Biggie or Tupac?','Knicks or Bulls?','Relationship status?','If animals could talk, which would be the rudest?',
-'What color is that dress??','What color was your first car?','What’s your favorite time of day?','Morning or night person?','What’s your dream destination?',
-'What city do you love?','What city do you loathe?','The last you’ll ever say?','Favorite swear word…','Favorite instrument?','David or Goliath?','Kim, Caitlyn or Kayne?'];
+'Howdya like your steak done?','Biggie or Tupac?','Knicks or Bulls?','Relationship status?','If animals talked, which would be the rudest?',
+'What color was your first car?','What’s your favorite time of day?','Morning or night person?','What’s your dream destination?',
+'What city do you love?','What city do you loathe?','The last you’ll ever say?','Favorite swear word…','Favorite instrument?','David or Goliath?',
+'Kim, Caitlyn or Kayne?','What\'s your middle name?','What\'s your sign?','Favorite day of the week?','Do you believe in ghosts?','Right or left-brained?',
+'Love, or money?','Describe yourself in one word.','Part of your body you hate?'];
 
 
 app.controller('homeControl', function($scope, $rootScope, $location, $timeout, spotifyFactory){
