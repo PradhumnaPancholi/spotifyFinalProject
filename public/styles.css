@@ -286,10 +286,10 @@ color: gray;
     border-radius: 10px;
     border: 2px solid #1DB954;
     opacity: 0.9;
-    height: 63%;
+    height: auto;
+    max-height: 65%;
     width: auto;
     max-width: 95%;
-    /* max-height: 45%; */
     overflow: scroll;
 }
 
